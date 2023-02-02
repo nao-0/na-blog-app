@@ -1,10 +1,11 @@
 class ArticlesController < ApplicationController
+before_action :set_article, only: [:show, :edit, :update]
+
     def index
         @articles = Article.all
     end
 
     def show
-        @article = Article.find(params[:id])
     end
     
     def new
@@ -22,11 +23,9 @@ class ArticlesController < ApplicationController
     end
 
     def edit
-        @article = Article.find(params[:id])
     end
 
     def update
-        @article = Article.find(params[:id])
         if @article.update(article_params)
             redirect_to article_path(@article), notice: '更新できました'
         else
@@ -39,6 +38,10 @@ class ArticlesController < ApplicationController
         article = Article.find(params[:id])
         article.destroy!
         redirect_to root_path, notice: '削除に成功しました'
+    end
+
+    def set_article
+        @article = Article.find(params[:id])
     end
 
     private
