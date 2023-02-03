@@ -6,8 +6,7 @@ before_action :set_article, only: [:show, :edit, :update]
     end
 
     def show
-        end
-    
+    end
 
     def new
         @article = Article.new
