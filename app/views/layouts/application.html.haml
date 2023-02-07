@@ -15,12 +15,15 @@
         - if !current_page?(root_path)
           = link_to :back do
             = image_tag 'back.svg', class: 'header_back'
-        %p.header_pageTitle blog-app
-      .dropdown
-        = image_tag 'default-avatar.png', class: 'header_avatar dropbtn'
-        .dropdown-content
-          %a{:href => "#"} プロフィール
-          %a{:href => "#"} ログアウト
+        %p.header_pageTitle Blogapp
+      - if user_signed_in?
+        .dropdown
+          = image_tag 'default-avatar.png', class: 'header_avatar dropbtn'
+          .dropdown-content
+            %a{:href => "#"} プロフィール
+            = link_to 'ログアウト', destroy_user_session_path, data: { method: 'delete' }
+      - else 
+        = link_to 'ログイン', new_user_session_path, class: 'header_loginBtn'
     - if flash.present?
       .flash
         - flash.each do |key, value|
