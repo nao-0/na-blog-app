@@ -7,6 +7,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
     end
 
     def show
+        @comments = @article.comments
     end
 
     def new
