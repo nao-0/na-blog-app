@@ -79,6 +79,7 @@ GEM
     aws-sigv4 (1.5.2)
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.18)
+    bcrypt (3.1.18-java)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -121,13 +122,24 @@ GEM
     faker (2.22.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
+    ffi (1.15.5-java)
+    ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x86-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
     haml (6.1.1)
       temple (>= 0.8.2)
       thor
       tilt
+    haml (6.1.1-java)
+      temple (>= 0.8.2)
+      thor
+      tilt
     hamlit (3.0.3)
+      temple (>= 0.8.2)
+      thor
+      tilt
+    hamlit (3.0.3-java)
       temple (>= 0.8.2)
       thor
       tilt
@@ -143,6 +155,7 @@ GEM
       activesupport (>= 5.0.0)
     jmespath (1.6.2)
     json (2.6.3)
+    json (2.6.3-java)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -159,25 +172,42 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.16.3)
     msgpack (1.5.6)
+    msgpack (1.5.6-java)
     nio4r (2.5.8)
+    nio4r (2.5.8-java)
     nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    nokogiri (1.13.8-java)
+      racc (~> 1.4)
+    nokogiri (1.13.8-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.13.8-x86-mingw32)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.22.1)
     parser (3.2.0.0)
       ast (~> 2.4.1)
     pg (1.4.5)
+    pg (1.4.5-x64-mingw32)
+    pg (1.4.5-x86-mingw32)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    pry (0.13.1-java)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+      spoon (~> 0.0)
     pry-byebug (3.9.0)
       byebug (~> 11.0)
       pry (~> 0.13.0)
     public_suffix (5.0.0)
     puma (4.3.12)
       nio4r (~> 2.0)
+    puma (4.3.12-java)
+      nio4r (~> 2.0)
     racc (1.6.0)
+    racc (1.6.0-java)
     rack (2.2.4)
     rack-proxy (0.7.4)
       rack
@@ -244,6 +274,8 @@ GEM
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc (2.4.0-x64-mingw32)
+      ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
       sassc (>= 2.0)
@@ -255,6 +287,8 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     sexp_processor (4.16.1)
+    spoon (0.0.6)
+      ffi
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -269,12 +303,15 @@ GEM
     temple (0.10.0)
     thor (1.2.1)
     thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
     tilt (2.0.11)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
     tzinfo (1.2.10)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2022.7)
+      tzinfo (>= 1.0.0)
     unicode-display_width (2.4.2)
     warden (1.2.9)
       rack (>= 2.0.9)
@@ -293,13 +330,19 @@ GEM
       railties (>= 4.2)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
+    websocket-driver (0.7.5-java)
+      websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.6.0)
 
 PLATFORMS
+  java
   ruby
+  x64-mingw32
+  x86-mingw32
+  x86-mswin32
 
 DEPENDENCIES
   annotate
