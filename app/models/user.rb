@@ -52,7 +52,4 @@ class User < ApplicationRecord
       'default-avatar.png'
     end
   end
-
-
-
 end
